@@ -246,6 +246,9 @@ body:before {
     background-color: rgb(var(--bg-primary));
     box-shadow: 0 4px 2px;
   }
+  #themeButton .nav-link {
+    background-color: inherit;
+  }
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: rgb(var(--bg-primary));

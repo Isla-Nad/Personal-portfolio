@@ -17,18 +17,17 @@ $("#themeButton").click(function () {
 });
 // ===========================================================================
 // nav-bar
-let isMenuVisible = true;
 $(".menu").click(function () {
   if ($(window).width() < 770) {
-    isMenuVisible = !isMenuVisible;
-    $(".menu-items").toggle(isMenuVisible);
+    $(".menu-items").toggle();
   }
 });
 
 $(window).resize(function () {
   if ($(window).width() >= 770) {
-    isMenuVisible = true;
-    $(".menu-items").toggle(isMenuVisible);
+    $(".menu-items").show();
+  } else {
+    $(".menu-items").hide();
   }
 });
 // ===============================================================================
